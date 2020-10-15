@@ -1,0 +1,11 @@
+SSM整合redis一:(主要依靠mybatis的二级缓存)
+1: 下载redis.clients
+2: 准备redis.properties属性文件
+3: 编写spring配置文件(
+	3.1:引入redis.properties
+	3.2:配置redis连接池
+	3.3:配置redis连接
+)
+4: 编写mybatis 自定义缓存类(实现Cache接口)
+5: 编写静态注入中间类(通富哦其来获得IOC容器中的对象)
+6: 开启mybatis二级缓存,并在mapper.xml中使用自定义缓存类
